@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Technical Quiz</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('Tech-Quiz.png') no-repeat center center/cover; /* Use the local image */
+        }
+
+        /* Glassmorphism Container */
+        .container {
+            width: 40%;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: block;
+            width: 80%;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ff9966, #ff5e62);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            margin: 10px auto;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #ff5e62, #ff9966);
+            transform: scale(1.05);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Technical Quiz</h1>
+        <p>Test your knowledge and challenge yourself with our interactive quiz.</p>
+        <a href="signup.html" class="btn">Sign Up</a>
+        <a href="login.html" class="btn">Log In</a>
+        <a href="quiz.html" class="btn">Start Quiz</a>
+    </div>
+</body>
+</html>
